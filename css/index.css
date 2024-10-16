@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family:"Montserrat", sans-serif;
+    color: white;
+}
+body {
+    background: linear-gradient(to bottom, #00008B, #1E90FF	) no-repeat;
+    min-height: 100vh;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    h3 {
+        margin-left: 100px;
+    }
+    
+}
+#links {
+    margin-left: 800px;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    a {
+        color: white;
+        font-size: 17px;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #D3D3D3;;
+    }
+}
+
