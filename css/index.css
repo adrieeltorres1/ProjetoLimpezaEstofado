@@ -10,7 +10,7 @@
 }
 body {
     background: linear-gradient(to bottom, #00008B, #1E90FF	) no-repeat;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 /* Topo da página */
@@ -33,10 +33,25 @@ body {
         color: white;
         font-size: 17px;
         text-decoration: none;
+        position: relative;
     }
-    a:hover {
-        color: #D3D3D3;;
+    a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 3px;
+        display: block;
+        margin-top: 5px;
+        right: 0;
+        background: #00ffff;
+        transition: width 0.3s ease;
     }
+    a:hover::after {
+        width: 100%;
+        left: 0;
+        background: #00ffff;
+    } 
+   
 }
 /* ------------------------*/
 
@@ -68,10 +83,18 @@ main {
             font-weight: 500;
             font-size: 15px;
             border-radius: 18px;
-            background-color: #00ffff;
-            border: 1px solid #001f3f;
+            background: linear-gradient(45deg, #00ffff, #001f3f);
+            position: relative;
+            transform-origin: center; 
+            transition: transform 0.4s, box-shadow 0.2s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+        button:hover {
+            transform: scale(1.05); 
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
+        }  
     }
+    
 }
 /* IMAGEM DO SOFÁ AO LADO DO TEXTO INICIAL */
 #imgSofa {
@@ -87,4 +110,24 @@ main {
         border-radius: 10px;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    #ParteDeBaixo {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #001f3f;
+        width: 800px;
+        height: 90px;
+        border-radius: 30px;
+        i {
+            font-size: 20px;
+            display: flex;
+        }
+    }
+    
 }
