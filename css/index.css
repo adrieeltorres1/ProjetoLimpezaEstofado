@@ -48,14 +48,15 @@ main {
     #txtInicial{
         width: 650px;
         span {
-            color: cyan;
+            color: #00ffff;
         }
     }
     #descriçãoInicial {
         margin-top: 20px;
-        width: 600px;
+        width: 550px;
+        text-align: justify;
         span {
-            font-size: 18px;
+            font-size: 20px;
         }
     }
     #btn {
@@ -64,10 +65,27 @@ main {
             height: 35px;
             width: 200px;
             color: black;
+            font-weight: 500;
             font-size: 15px;
             border-radius: 18px;
-            background-color: rgb(20, 145, 228);
-            border: 1px solid white;
+            background-color: #00ffff;
+            border: 1px solid #001f3f;
         }
+    }
+}
+
+/* IMAGEM DO SOFÁ AO LADO DO TEXTO INICIAL */
+#imgSofa {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    img {
+        position: absolute;
+        width: 500px;
+        height: 400px;
+        margin-right: 250px;
+        bottom: 5px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     }
 }
