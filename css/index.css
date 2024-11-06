@@ -71,7 +71,7 @@ main {
         width: 550px;
         text-align: justify;
         span {
-            font-size: 20px;
+            font-size: 18px;
         }
     }
     #btn {
@@ -131,3 +131,61 @@ footer {
     }
     
 }
+#quemSomos {
+    background-image: linear-gradient(to bottom, white, #7abcff);
+}
+
+#quemSomos {
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+    height: 500px;
+
+    #imgSobre {
+        display: flex;
+        /* margin-top: 300px; */
+        margin-left: 60px;
+       img {
+        height: 350px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+       }
+    }
+  
+
+    #SobreAempresa{
+        /* border: 2px solid black; */
+        height: 400px;
+        width: 500px;
+        margin-left: 300px;
+        #imgEstrelas {
+            display: flex;
+            justify-content: center;
+            img {
+                height: 80px;
+            }
+        }
+        h3 {
+            margin-top: 10px;
+            color: #001f3f;
+            display: flex;
+            justify-content: center;
+        }
+        p {
+            margin: 10px;
+            color: black;
+            font-size: 18px;
+            strong {
+                color: #001f3f;
+            }
+        }
+    }
+
+       #redeSocias {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
